@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_upperhexa.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/25 21:25:02 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/12/13 01:55:59 by abouafso         ###   ########.fr       */
+/*   Created: 2023/12/12 17:05:20 by abouafso          #+#    #+#             */
+/*   Updated: 2023/12/13 01:54:55 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <unistd.h>
-# include <stdarg.h>
-# include <stddef.h>
-# include <stdio.h>
+int	ft_upperhexa(unsigned int n)
+{
+	int		l;
+	char	*hexa;
 
-int		ft_putchar(char c);
-int		ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_putnbr(long n);
-int		ft_countlen(long long n);
-int		ft_upperhexa(unsigned int n);
-int		ft_lowerhexa(unsigned int n)
-int		ft_lowerhexa(unsigned int n);
-int		ft_lenhexa(long long n);
-
-#endif
+	hexa = "0123456789ABCDEF";
+	l = ft_lenhexa(n);
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		n = -n;
+	}
+	if (n > 15)
+	{
+		ft_uperhexa(n / 16);
+	}
+	ft_putchar(hexa[n % 16]);
+	return (l);
+}
+int main()
+{
+	ft_uperhexa(2444);
+}
