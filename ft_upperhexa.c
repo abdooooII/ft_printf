@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 17:05:20 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/13 01:54:55 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/13 02:27:15 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,8 @@ int	ft_upperhexa(unsigned int n)
 	}
 	if (n > 15)
 	{
-		ft_uperhexa(n / 16);
+		ft_upperhexa(n / 16);
 	}
 	ft_putchar(hexa[n % 16]);
 	return (l);
-}
-int main()
-{
-	ft_uperhexa(2444);
 }

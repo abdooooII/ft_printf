@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 01:52:39 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/13 01:54:19 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/13 02:27:10 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_lowerhexa(unsigned int n)
 	}
 	if (n > 15)
 	{
-		ft_uperhexa(n / 16);
+		ft_lowerhexa(n / 16);
 	}
 	ft_putchar(hexa[n % 16]);
 	return (l);

@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 21:25:02 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/12/13 01:55:59 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/13 02:24:09 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int		ft_strlen(char *str);
 int		ft_putnbr(long n);
 int		ft_countlen(long long n);
 int		ft_upperhexa(unsigned int n);
-int		ft_lowerhexa(unsigned int n)
 int		ft_lowerhexa(unsigned int n);
 int		ft_lenhexa(long long n);
 
