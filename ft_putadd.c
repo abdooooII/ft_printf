@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 04:42:40 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/13 04:47:28 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/13 04:48:07 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_putadd(unsigned long n)
 	}
 	else
 		l = l + ft_putchar(hexa[n])
-	return (l)
+	return (l);
 }
