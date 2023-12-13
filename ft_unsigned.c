@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_unsigned.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/25 21:25:02 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/12/13 04:07:33 by abouafso         ###   ########.fr       */
+/*   Created: 2023/12/13 03:34:36 by abouafso          #+#    #+#             */
+/*   Updated: 2023/12/13 04:07:00 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <unistd.h>
-# include <stdarg.h>
-# include <stddef.h>
-# include <stdio.h>
+int	ft_unsigned(unsigned int n)
+{
+	int	l;
 
-int		ft_putchar(char c);
-int		ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_putnbr(long n);
-int		ft_countlen(long long n);
-int		ft_upperhexa(unsigned int n);
-int		ft_lowerhexa(unsigned int n);
-int		ft_lenhexa(long long n);
-int		ft_unsigned(unsigned int n);
-
-#endif
+	l = ft_countlen(n);
+	if (n > 9)
+	{
+		ft_unsigned(n / 10);
+		ft_unsigned(n % 10);
+	}
+	else
+		ft_putchar(n + 48);
+	return (l);
+}
