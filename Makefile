@@ -6,7 +6,7 @@
 #    By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 16:15:49 by abouafso          #+#    #+#              #
-#    Updated: 2023/12/12 18:44:54 by abouafso         ###   ########.fr        #
+#    Updated: 2023/12/14 15:47:47 by abouafso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
-SRC = ft_strlen.c ft_putstr.c ft_putchar.c ft_putnbr.c ft_countlen.c ft_lenhexa.c
+SRC = ft_strlen.c ft_putstr.c ft_putchar.c ft_putnbr.c ft_countlen.c ft_lenhexa.c ft_upperhexa.c ft_unsigned.c ft_putadd.c ft_printf.c ft_lowerhexa.c 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
