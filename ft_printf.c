@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abderrahmaneouafsou <abderrahmaneouafso    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:53:24 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/13 21:55:21 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:22:18 by abderrahman      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,4 @@ static int	ft_format(va_list ap, const char f, int l)
 	else
 		l = l + ft_putchar(f);
 }
+mm
