@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abderrahmaneouafsou <abderrahmaneouafso    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 21:25:02 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/12/13 04:07:33 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:36:44 by abderrahman      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,8 @@ int		ft_upperhexa(unsigned int n);
 int		ft_lowerhexa(unsigned int n);
 int		ft_lenhexa(long long n);
 int		ft_unsigned(unsigned int n);
+int     ft_putadd(unsigned long n);
+int     ft_printf(const char *f, ...);
+
 
 #endif
