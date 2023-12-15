@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 16:34:56 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/12 16:37:57 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/15 21:45:03 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_putchar(char c)
 {
-	if (write(1, &c, 1) == -1)
-		return (-1);
-	return (1);
+	return (write(1, &c, 1));
 }

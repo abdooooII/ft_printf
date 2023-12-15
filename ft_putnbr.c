@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 16:46:14 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/12 17:00:40 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/15 21:43:21 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_putnbr(long n)
 	if (n > 9)
 	{
 		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		ft_putchar((n % 10) + 48);
 	}
 	else
 		ft_putchar(n + '0');

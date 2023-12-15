@@ -6,7 +6,7 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 03:34:36 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/13 04:07:00 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/15 21:46:15 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_unsigned(unsigned int n)
 	if (n > 9)
 	{
 		ft_unsigned(n / 10);
-		ft_unsigned(n % 10);
+		ft_putchar((n % 10) + 48);
 	}
 	else
 		ft_putchar(n + 48);

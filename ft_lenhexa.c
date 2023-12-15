@@ -6,22 +6,17 @@
 /*   By: abouafso <abouafso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 17:17:20 by abouafso          #+#    #+#             */
-/*   Updated: 2023/12/12 17:49:15 by abouafso         ###   ########.fr       */
+/*   Updated: 2023/12/15 21:39:55 by abouafso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_lenhexa(long long n)
+int	ft_lenhexa(unsigned long n)
 {
 	int	i;
 
 	i = 0;
 	if (n == 0)
 		return (1);
-	if (n < 0)
-	{
-		i++;
-		n = -n;
-	}
 	while (n)
 	{
 		n /= 16;
